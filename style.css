@@ -20,6 +20,7 @@
   background-color: black;
   border-radius: 13px;
   box-shadow: 3px 3px 10px black;
+  border: 2px solid white;
 }
 .headline {
   text-align: center;
