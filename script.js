@@ -1,5 +1,12 @@
+let wrong = false;
+
 function setValue(value) {
-  document.querySelector("#inp").value += value;
+  if (wrong === false) {
+    document.querySelector("#inp").value += value;
+  } else {
+    document.querySelector("#inp").value = value;
+    wrong = false;
+  }
 }
 function allClear() {
   document.querySelector("#inp").value = "";
@@ -12,6 +19,7 @@ function calculate() {
   document.querySelector("#inp").value = preAns;
   if (preAns == undefined) {
     document.querySelector("#inp").value = "Enter valid digit";
+    wrong = true;
   }
 }
 
