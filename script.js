@@ -31,7 +31,6 @@ function calculate() {
     }
   } catch (error) {
     alert("Invalid Syntax");
-    document.querySelector("#inp").value = "";
   }
 }
 function root() {
